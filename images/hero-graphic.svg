@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGlow" x1="100" y1="50" x2="500" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.04" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="300" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <filter id="shadowFilter" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <rect x="20" y="20" width="560" height="440" rx="24" fill="url(#bgGlow)" />
+  <circle cx="500" cy="90" r="70" fill="#38bdf8" fill-opacity="0.15" />
+  <circle cx="90" cy="390" r="90" fill="#0284c7" fill-opacity="0.1" />
+
+  <!-- Main Desktop Window -->
+  <g filter="url(#shadowFilter)">
+    <rect x="50" y="50" width="500" height="340" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Browser Header Bar -->
+    <rect x="50" y="50" width="500" height="44" rx="16" fill="#f8fafc" />
+    <path d="M50 78h500v16H50z" fill="#f8fafc" />
+    <line x1="50" y1="94" x2="550" y2="94" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Window Controls -->
+    <circle cx="78" cy="72" r="6" fill="#ef4444" />
+    <circle cx="98" cy="72" r="6" fill="#f59e0b" />
+    <circle cx="118" cy="72" r="6" fill="#10b981" />
+    <!-- Address Bar -->
+    <rect x="150" y="62" width="280" height="20" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="170" y="76" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b" font-weight="500">https://sanwebtech.example.com</text>
+
+    <!-- Browser Content -->
+    <!-- Mini Navbar -->
+    <rect x="75" y="112" width="450" height="24" rx="4" fill="#f1f5f9" />
+    <rect x="85" y="118" width="50" height="12" rx="3" fill="#0284c7" />
+    <rect x="360" y="119" width="35" height="10" rx="2" fill="#94a3b8" />
+    <rect x="405" y="119" width="35" height="10" rx="2" fill="#94a3b8" />
+    <rect x="450" y="119" width="45" height="10" rx="2" fill="#0284c7" />
+
+    <!-- Hero Mockup Inside Browser -->
+    <rect x="75" y="152" width="220" height="22" rx="4" fill="#0f172a" />
+    <rect x="75" y="184" width="260" height="12" rx="3" fill="#94a3b8" />
+    <rect x="75" y="202" width="210" height="12" rx="3" fill="#cbd5e1" />
+    <!-- CTA Button Mockup -->
+    <rect x="75" y="230" width="95" height="30" rx="6" fill="url(#primaryAccent)" />
+    <rect x="180" y="230" width="85" height="30" rx="6" fill="#e2e8f0" />
+
+    <!-- Feature Grid inside window -->
+    <g transform="translate(75, 276)">
+      <rect x="0" y="0" width="135" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+      <rect x="12" y="14" width="24" height="24" rx="6" fill="#e0f2fe" />
+      <circle cx="24" cy="26" r="6" fill="#0284c7" />
+      <rect x="12" y="46" width="70" height="10" rx="2" fill="#334155" />
+      <rect x="12" y="62" width="110" height="8" rx="2" fill="#94a3b8" />
+
+      <rect x="155" y="0" width="135" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+      <rect x="167" y="14" width="24" height="24" rx="6" fill="#dcfce7" />
+      <circle cx="179" cy="26" r="6" fill="#10b981" />
+      <rect x="167" y="46" width="70" height="10" rx="2" fill="#334155" />
+      <rect x="167" y="62" width="110" height="8" rx="2" fill="#94a3b8" />
+
+      <rect x="310" y="0" width="135" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+      <rect x="322" y="14" width="24" height="24" rx="6" fill="#fef3c7" />
+      <circle cx="334" cy="26" r="6" fill="#d97706" />
+      <rect x="322" y="46" width="70" height="10" rx="2" fill="#334155" />
+      <rect x="322" y="62" width="110" height="8" rx="2" fill="#94a3b8" />
+    </g>
+  </g>
+
+  <!-- Floating Mobile Device Overlay (representing mobile responsiveness) -->
+  <g transform="translate(415, 175)" filter="url(#shadowFilter)">
+    <rect width="145" height="260" rx="22" fill="#0f172a" stroke="#334155" stroke-width="3" />
+    <!-- Screen -->
+    <rect x="6" y="8" width="133" height="244" rx="16" fill="#ffffff" />
+    <!-- Speaker notch -->
+    <rect x="48" y="14" width="48" height="5" rx="2.5" fill="#334155" />
+    <!-- Mobile UI content -->
+    <rect x="16" y="32" width="40" height="10" rx="2" fill="#0284c7" />
+    <rect x="110" y="32" width="18" height="10" rx="2" fill="#64748b" />
+    <rect x="16" y="56" width="110" height="14" rx="3" fill="#0f172a" />
+    <rect x="16" y="76" width="90" height="8" rx="2" fill="#94a3b8" />
+    <rect x="16" y="90" width="60" height="18" rx="4" fill="url(#primaryAccent)" />
+    <!-- Mobile Cards -->
+    <rect x="16" y="120" width="112" height="42" rx="6" fill="#f1f5f9" />
+    <rect x="24" y="128" width="20" height="12" rx="2" fill="#0284c7" />
+    <rect x="50" y="128" width="68" height="8" rx="2" fill="#334155" />
+    <rect x="50" y="140" width="50" height="6" rx="2" fill="#94a3b8" />
+
+    <rect x="16" y="170" width="112" height="42" rx="6" fill="#f1f5f9" />
+    <rect x="24" y="178" width="20" height="12" rx="2" fill="#10b981" />
+    <rect x="50" y="178" width="68" height="8" rx="2" fill="#334155" />
+    <rect x="50" y="190" width="50" height="6" rx="2" fill="#94a3b8" />
+
+    <!-- Home Indicator -->
+    <rect x="48" y="242" width="48" height="3" rx="1.5" fill="#cbd5e1" />
+  </g>
+
+  <!-- Floating Badge: 100% Responsive -->
+  <g transform="translate(30, 290)" filter="url(#shadowFilter)">
+    <rect width="170" height="56" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="14" fill="#e0f2fe" />
+    <path d="M22 28l4 4 8-8" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="52" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0f172a">100% Responsive</text>
+    <text x="52" y="38" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#64748b">Mobile • Tablet • Desktop</text>
+  </g>
+</svg>

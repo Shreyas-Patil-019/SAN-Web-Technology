@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <rect width="120" height="120" rx="60" fill="#dcfce7" />
+  <!-- Shoulders -->
+  <path d="M24 108c4-22 22-32 36-32s32 10 36 32" fill="#0f766e" />
+  <!-- Hair back -->
+  <circle cx="60" cy="50" r="28" fill="#334155" />
+  <!-- Head -->
+  <circle cx="60" cy="54" r="22" fill="#fed7aa" />
+  <!-- Hair bangs -->
+  <path d="M38 48c4-12 14-16 22-16s18 4 22 16c-8-6-16-6-22-4-6 2-14 2-22 4z" fill="#334155" />
+  <!-- Friendly smile -->
+  <path d="M52 64q8 6 16 0" stroke="#7c2d12" stroke-width="2" stroke-linecap="round" fill="none" />
+</svg>
